@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="15" fill="#1F2B25"/>
+  <!-- Arco de herradura con dovelas, guiño a la arquitectura andaluza -->
+  <path d="M18 50 V31 a14 14 0 1 1 28 0 V50 h-7 V31.5 a7 7 0 1 0 -14 0 V50 Z" fill="#FFFFFF"/>
+  <path d="M20.2 23.2 l6.1 3.5 M25.4 18.6 l3.6 6 M32 17 v7 M38.6 18.6 l-3.6 6 M43.8 23.2 l-6.1 3.5" stroke="#C0573A" stroke-width="3.2" stroke-linecap="butt"/>
+  <rect x="14" y="50" width="36" height="4.5" rx="1.5" fill="#E3B964"/>
+</svg>

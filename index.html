@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Appsconarte · Apps útiles hechas en Andalucía</title>
-<meta name="description" content="Appsconarte crea aplicaciones Android sencillas y útiles: Cita ITV Andalucía, Descubre Córdoba y Mi Nómina Neta. Sin registros y respetando tu privacidad.">
+<meta name="description" content="Appsconarte crea aplicaciones Android sencillas y útiles: Cita ITV Andalucía, Descubre Córdoba, Mi Nómina Neta y Puzzlazo. Sin registros y respetando tu privacidad.">
 <link rel="icon" href="img/logo.svg" type="image/svg+xml">
 <meta property="og:title" content="Appsconarte">
 <meta property="og:description" content="Apps sencillas y útiles, hechas en Andalucía.">
@@ -66,6 +66,8 @@
   .itv { --acento: var(--verde); --acento-claro: var(--verde-claro); }
   .cordoba { --acento: var(--terracota); --acento-claro: var(--terracota-claro); }
   .nomina { --acento: var(--verde); --acento-claro: var(--verde-claro); }
+  .puzzlazo { --acento: #C2402A; --acento-claro: #FDE9DA; }
+  @media (prefers-color-scheme: dark) { .puzzlazo { --acento: #FF9A80; --acento-claro: #3A2621; } }
   .acciones { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .boton { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--borde); }
   .boton.principal { background: var(--acento); color: #fff; border-color: transparent; }
@@ -126,6 +128,7 @@
         <img src="img/citaitv-icono.png" alt="Icono de Cita ITV Andalucía">
         <img src="img/descubrecordoba-icono.png" alt="Icono de Descubre Córdoba">
         <img src="img/minominaneta-icono.svg" alt="Icono de Mi Nómina Neta">
+        <img src="img/puzzlazo-icono.png" alt="Icono de Puzzlazo">
       </div>
     </div>
   </div>
@@ -212,6 +215,31 @@
         </div>
         <div class="telefono"><img src="img/minominaneta-captura.jpg" alt="Resultado del sueldo neto en Mi Nómina Neta" loading="lazy" width="540" height="1080"></div>
       </article>
+
+      <article class="app puzzlazo invertida">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/puzzlazo-icono.png" alt="">
+            <div>
+              <h3>Puzzlazo</h3>
+              <p class="lema">¿Una partidita?</p>
+            </div>
+          </div>
+          <p>Tres juegos de los de siempre en una sola app, con un estilo de juego de mesa hecho a mano: 2048, Bloques y Sudoku.</p>
+          <ul>
+            <li>2048: desliza y junta números iguales hasta llegar al 2048</li>
+            <li>Bloques: encaja piezas y limpia filas y columnas haciendo combos</li>
+            <li>Sudoku en cuatro niveles, con notas, pistas y tu mejor tiempo</li>
+            <li>Funciona sin conexión y sigue la partida donde la dejaste</li>
+            <li>Nunca hay anuncios a mitad de partida</li>
+          </ul>
+          <div class="acciones">
+            <span class="boton pronto">Muy pronto en Google Play</span>
+            <a class="boton" href="puzzlazo-privacidad/">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="telefono"><img src="img/puzzlazo-captura.jpg" alt="Partida de 2048 en Puzzlazo" loading="lazy" width="540" height="1080"></div>
+      </article>
     </div>
   </section>
 
@@ -255,7 +283,7 @@
 <footer>
   <div class="envoltura">
     <span>© 2026 Appsconarte</span>
-    <span><a href="citaitv-privacidad/">Privacidad · Cita ITV Andalucía</a> · <a href="descubrecordoba-privacidad/">Privacidad · Descubre Córdoba</a> · <a href="minominaneta-privacidad/">Privacidad · Mi Nómina Neta</a></span>
+    <span><a href="citaitv-privacidad/">Privacidad · Cita ITV Andalucía</a> · <a href="descubrecordoba-privacidad/">Privacidad · Descubre Córdoba</a> · <a href="minominaneta-privacidad/">Privacidad · Mi Nómina Neta</a> · <a href="puzzlazo-privacidad/">Privacidad · Puzzlazo</a></span>
     <span class="legal">Foto de la Mezquita-Catedral en la captura de Descubre Córdoba: Benjamin Smith, CC BY-SA 4.0. Google Play es una marca de Google LLC.</span>
   </div>
 </footer>

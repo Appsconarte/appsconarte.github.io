@@ -68,6 +68,8 @@
   .nomina { --acento: var(--verde); --acento-claro: var(--verde-claro); }
   .puzzlazo { --acento: #C2402A; --acento-claro: #FDE9DA; }
   @media (prefers-color-scheme: dark) { .puzzlazo { --acento: #FF9A80; --acento-claro: #3A2621; } }
+  .linterna { --acento: #8A6100; --acento-claro: #FFF0C7; }
+  @media (prefers-color-scheme: dark) { .linterna { --acento: #FFC83D; --acento-claro: #3A3120; } }
   .acciones { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .boton { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--borde); }
   .boton.principal { background: var(--acento); color: #fff; border-color: transparent; }
@@ -129,6 +131,7 @@
         <img src="img/descubrecordoba-icono.png" alt="Icono de Descubre Córdoba">
         <img src="img/minominaneta-icono.svg" alt="Icono de Mi Nómina Neta">
         <img src="img/puzzlazo-icono.png" alt="Icono de Puzzlazo">
+        <img src="img/linterna-icono.png" alt="Icono de Linterna Simple y Fácil">
       </div>
     </div>
   </div>
@@ -240,6 +243,31 @@
         </div>
         <div class="telefono"><img src="img/puzzlazo-captura.jpg" alt="Partida de 2048 en Puzzlazo" loading="lazy" width="540" height="1080"></div>
       </article>
+
+      <article class="app linterna">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/linterna-icono.png" alt="">
+            <div>
+              <h3>Linterna Simple y Fácil</h3>
+              <p class="lema">Luz al instante, con un toque</p>
+            </div>
+          </div>
+          <p>La linterna de siempre, pero más útil: se enciende nada más abrirla y trae los modos que echas en falta en el botón del móvil.</p>
+          <ul>
+            <li>Se enciende al abrir la app, con widget y botón en los ajustes rápidos</li>
+            <li>Estroboscopio regulable y señal SOS en morse</li>
+            <li>Pantalla-luz de colores, con luz roja y modo vela</li>
+            <li>Apagado automático para no gastar batería</li>
+            <li>Extras: mensajes en morse, nivel de burbuja y brújula</li>
+          </ul>
+          <div class="acciones">
+            <span class="boton pronto">Muy pronto en Google Play</span>
+            <a class="boton" href="linterna-privacidad/">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="telefono"><img src="img/linterna-captura.jpg" alt="Pantalla principal de Linterna Simple y Fácil con la luz encendida" loading="lazy" width="540" height="1080"></div>
+      </article>
     </div>
   </section>
 
@@ -283,7 +311,7 @@
 <footer>
   <div class="envoltura">
     <span>© 2026 Appsconarte</span>
-    <span><a href="citaitv-privacidad/">Privacidad · Cita ITV Andalucía</a> · <a href="descubrecordoba-privacidad/">Privacidad · Descubre Córdoba</a> · <a href="minominaneta-privacidad/">Privacidad · Mi Nómina Neta</a> · <a href="puzzlazo-privacidad/">Privacidad · Puzzlazo</a></span>
+    <span><a href="citaitv-privacidad/">Privacidad · Cita ITV Andalucía</a> · <a href="descubrecordoba-privacidad/">Privacidad · Descubre Córdoba</a> · <a href="minominaneta-privacidad/">Privacidad · Mi Nómina Neta</a> · <a href="puzzlazo-privacidad/">Privacidad · Puzzlazo</a> · <a href="linterna-privacidad/">Privacidad · Linterna Simple y Fácil</a></span>
     <span class="legal">Foto de la Mezquita-Catedral en la captura de Descubre Córdoba: Benjamin Smith, CC BY-SA 4.0. Google Play es una marca de Google LLC.</span>
   </div>
 </footer>

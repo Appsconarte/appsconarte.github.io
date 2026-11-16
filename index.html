@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Appsconarte · Apps útiles hechas en Andalucía</title>
-<meta name="description" content="Appsconarte crea aplicaciones Android sencillas y útiles: Cita ITV Andalucía, Descubre Córdoba, Mi Nómina Neta, Puzzlazo, Linterna Simple y Fácil y Pan Fácil. Sencillas y respetando tu privacidad.">
+<meta name="description" content="Appsconarte crea aplicaciones Android sencillas y útiles: Cita ITV Andalucía, Descubre Córdoba, Mi Nómina Neta, Puzzlazo, Linterna Simple y Fácil, Pan Fácil, Tanquetazo, Red Práctica, aMule Remote y Whiskers of the Night. Sencillas y respetando tu privacidad.">
 <link rel="icon" href="img/logo.svg" type="image/svg+xml">
 <meta property="og:title" content="Appsconarte">
 <meta property="og:description" content="Apps sencillas y útiles, hechas en Andalucía.">
@@ -44,8 +44,9 @@
   .portada .etiqueta { display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--verde); background: var(--verde-claro); padding: 6px 12px; border-radius: 999px; }
   .portada h1 { font-size: clamp(36px, 6vw, 58px); margin: 18px auto 16px; max-width: 16ch; }
   .portada p { font-size: 19px; color: var(--suave); max-width: 44ch; margin: 0 auto; }
-  .iconos { display: flex; justify-content: center; gap: 18px; margin-top: 36px; }
+  .iconos { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin: 36px auto 0; max-width: 560px; }
   .iconos img { width: 76px; height: 76px; border-radius: 20px; box-shadow: var(--sombra); }
+  @media (max-width: 480px) { .iconos { gap: 12px; } .iconos img { width: 60px; height: 60px; border-radius: 16px; } }
 
   /* Fichas de apps */
   section { padding: 56px 0; }
@@ -72,6 +73,14 @@
   @media (prefers-color-scheme: dark) { .linterna { --acento: #FFC83D; --acento-claro: #3A3120; } }
   .panfacil { --acento: #8B4A1F; --acento-claro: #FFDCC4; }
   @media (prefers-color-scheme: dark) { .panfacil { --acento: #FFB685; --acento-claro: #3A2621; } }
+  .tanquetazo { --acento: #5B6B1F; --acento-claro: #EEF0D6; }
+  @media (prefers-color-scheme: dark) { .tanquetazo { --acento: #C8D86A; --acento-claro: #2C301C; } }
+  .redpractica { --acento: #1F5FA8; --acento-claro: #E1ECF8; }
+  @media (prefers-color-scheme: dark) { .redpractica { --acento: #8FC1F5; --acento-claro: #1B2838; } }
+  .amuleremote { --acento: #B85A12; --acento-claro: #FCE8D6; }
+  @media (prefers-color-scheme: dark) { .amuleremote { --acento: #FFB074; --acento-claro: #3A2A1C; } }
+  .whiskers { --acento: #5B3FA0; --acento-claro: #ECE6FA; }
+  @media (prefers-color-scheme: dark) { .whiskers { --acento: #C3B1FF; --acento-claro: #2A2340; } }
   .acciones { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .boton { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--borde); }
   .boton.principal { background: var(--acento); color: #fff; border-color: transparent; }
@@ -135,6 +144,10 @@
         <img src="img/puzzlazo-icono.png" alt="Icono de Puzzlazo">
         <img src="img/linterna-icono.png" alt="Icono de Linterna Simple y Fácil">
         <img src="img/panfacil-icono.png" alt="Icono de Pan Fácil">
+        <img src="img/tanquetazo-icono.png" alt="Icono de Tanquetazo">
+        <img src="img/redpractica-icono.png" alt="Icono de Red Práctica">
+        <img src="img/amuleremote-icono.png" alt="Icono de aMule Remote">
+        <img src="img/whiskers-icono.png" alt="Icono de Whiskers of the Night">
       </div>
     </div>
   </div>
@@ -296,6 +309,107 @@
         </div>
         <div class="telefono"><img src="img/panfacil-captura.jpg" alt="Pantalla principal de Pan Fácil con un campo de trigo y recetas de masa madre" loading="lazy" width="540" height="1080"></div>
       </article>
+
+      <article class="app tanquetazo">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/tanquetazo-icono.png" alt="">
+            <div>
+              <h3>Tanquetazo</h3>
+              <p class="lema">Batalla de tanques retro</p>
+            </div>
+          </div>
+          <p>Defiende tu base de oleadas de tanques enemigos en un arcade de 8 bits con pixel art propio y controles pensados para el móvil.</p>
+          <ul>
+            <li>35 niveles hechos a mano y un jefe gigante cada 5 etapas</li>
+            <li>Dos jugadores en el mismo móvil, en cooperativo</li>
+            <li>Editor de niveles: crea mapas y compártelos con un código</li>
+            <li>Taller con mejoras y aspectos para tu tanque</li>
+            <li>Nunca hay anuncios a mitad de etapa</li>
+          </ul>
+          <div class="acciones">
+            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.tanquetazo">Descargar en Google Play</a>
+            <a class="boton" href="tanquetazo-privacidad/">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="telefono"><img src="img/tanquetazo-captura.jpg" alt="Partida de Tanquetazo con muros de ladrillo, tanques y los controles en pantalla" loading="lazy" width="540" height="1080"></div>
+      </article>
+
+      <article class="app redpractica invertida">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/redpractica-icono.png" alt="">
+            <div>
+              <h3>Red Práctica</h3>
+              <p class="lema">Redes, IP y RAID, practicando</p>
+            </div>
+          </div>
+          <p>Teoría explicada y ejercicios que se generan al azar para aprender redes de verdad, con la solución paso a paso de cada respuesta.</p>
+          <ul>
+            <li>Subnetting FLSM y VLSM, CIDR, IPv6 y sistemas de numeración</li>
+            <li>Modelo OSI, TCP/IP, puertos, DNS, DHCP y enrutamiento</li>
+            <li>RAID y Docker con ejercicios prácticos</li>
+            <li>«Mis fallos», examen mixto y estadísticas por tema</li>
+            <li>Sin anuncios, sin registro y sin conexión</li>
+          </ul>
+          <div class="acciones">
+            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.redpractica">Descargar en Google Play</a>
+            <a class="boton" href="redpractica-privacidad/">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="telefono"><img src="img/redpractica-captura.jpg" alt="Pantalla de inicio de Red Práctica con el examen mixto y la lista de temas" loading="lazy" width="540" height="1080"></div>
+      </article>
+
+      <article class="app amuleremote">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/amuleremote-icono.png" alt="">
+            <div>
+              <h3>aMule Remote</h3>
+              <p class="lema">Tu aMule, desde el móvil</p>
+            </div>
+          </div>
+          <p>Controla el aMule de tu ordenador o servidor desde el móvil: mira cómo van tus descargas, busca archivos y añade enlaces ed2k al momento.</p>
+          <ul>
+            <li>Descargas en curso y completadas, con pausa, prioridad y categorías</li>
+            <li>Búsqueda en servidores y en Kad, y descarga con un toque</li>
+            <li>Abre los enlaces ed2k del navegador y guárdalos para después</li>
+            <li>Red, servidores, límites de velocidad y preferencias de aMule</li>
+            <li>Modo demostración para probarla sin tener un servidor</li>
+          </ul>
+          <div class="acciones">
+            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.amuleremote">Descargar en Google Play</a>
+            <a class="boton" href="amuleremote-privacidad/">Política de privacidad</a>
+          </div>
+          <p class="aviso">App no oficial, sin relación con el equipo de aMule. Necesitas aMule o amuled con las conexiones externas activadas.</p>
+        </div>
+        <div class="telefono"><img src="img/amuleremote-captura.jpg" alt="Lista de descargas en aMule Remote, en modo demostración" loading="lazy" width="540" height="1080"></div>
+      </article>
+
+      <article class="app whiskers invertida">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/whiskers-icono.png" alt="">
+            <div>
+              <h3>Whiskers of the Night</h3>
+              <p class="lema">Michis contra la horda</p>
+            </div>
+          </div>
+          <p>Cuando cae la noche, ratas, perros y aspiradoras gigantes invaden la casa y solo tu gato puede pararlos. Muévelo con un dedo: sus armas atacan solas.</p>
+          <ul>
+            <li>5 escenarios, 5 gatos y 5 armas que mejoras en cada partida</li>
+            <li>Jefes a los 3, 6 y 9 minutos: ¿aguantarás toda la noche?</li>
+            <li>Cooperativo de 2 a 4 jugadores en el mismo móvil</li>
+            <li>Reto diario y ranking con tus amigos</li>
+            <li>Mejora tu gatera y rescata gatitos para tu camada</li>
+          </ul>
+          <div class="acciones">
+            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.michipocalipsis">Descargar en Google Play</a>
+            <a class="boton" href="whiskers-privacidad/">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="telefono"><img src="img/whiskers-captura.jpg" alt="Subida de nivel en Whiskers of the Night, eligiendo entre tres mejoras" loading="lazy" width="540" height="1080"></div>
+      </article>
     </div>
   </section>
 
@@ -313,13 +427,13 @@
         </div>
         <div class="principio">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
-          <h3>Tus datos, en tu móvil</h3>
-          <p>Lo que guardas se queda en tu dispositivo. Todo lo demás, solo con tu consentimiento.</p>
+          <h3>Tú decides dónde van tus datos</h3>
+          <p>Por defecto se guardan en tu móvil. Si quieres, en algunas apps puedes iniciar sesión para tener una copia en la nube, y borrarla cuando quieras.</p>
         </div>
         <div class="principio">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.3 2.3 4.7-5"/></svg>
           <h3>Sencillez ante todo</h3>
-          <p>Botones grandes, textos claros y publicidad discreta que no interrumpe.</p>
+          <p>Botones grandes, textos claros y publicidad discreta que nunca te corta a mitad de algo.</p>
         </div>
       </div>
     </div>
@@ -339,7 +453,7 @@
 <footer>
   <div class="envoltura">
     <span>© 2026 Appsconarte</span>
-    <span><a href="citaitv-privacidad/">Privacidad · Cita ITV Andalucía</a> · <a href="descubrecordoba-privacidad/">Privacidad · Descubre Córdoba</a> · <a href="minominaneta-privacidad/">Privacidad · Mi Nómina Neta</a> · <a href="puzzlazo-privacidad/">Privacidad · Puzzlazo</a> · <a href="linterna-privacidad/">Privacidad · Linterna Simple y Fácil</a> · <a href="panfacil-privacidad/">Privacidad · Pan Fácil</a></span>
+    <span><a href="citaitv-privacidad/">Privacidad · Cita ITV Andalucía</a> · <a href="descubrecordoba-privacidad/">Privacidad · Descubre Córdoba</a> · <a href="minominaneta-privacidad/">Privacidad · Mi Nómina Neta</a> · <a href="puzzlazo-privacidad/">Privacidad · Puzzlazo</a> · <a href="linterna-privacidad/">Privacidad · Linterna Simple y Fácil</a> · <a href="panfacil-privacidad/">Privacidad · Pan Fácil</a> · <a href="tanquetazo-privacidad/">Privacidad · Tanquetazo</a> · <a href="redpractica-privacidad/">Privacidad · Red Práctica</a> · <a href="amuleremote-privacidad/">Privacidad · aMule Remote</a> · <a href="whiskers-privacidad/">Privacidad · Whiskers of the Night</a></span>
     <span class="legal">Foto de la Mezquita-Catedral en la captura de Descubre Córdoba: Benjamin Smith, CC BY-SA 4.0. Fotos en la captura de Pan Fácil, de Wikimedia Commons: böhringer friedrich (CC BY-SA 2.5), Jeuwre (CC BY-SA 4.0) y Anon423 (CC BY-SA 4.0). Google Play es una marca de Google LLC.</span>
   </div>
 </footer>

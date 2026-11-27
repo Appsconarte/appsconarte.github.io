@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Appsconarte · Apps útiles hechas en Andalucía</title>
-<meta name="description" content="Appsconarte crea aplicaciones Android sencillas y útiles: Cita ITV Andalucía, Descubre Córdoba, Mi Nómina Neta, Puzzlazo, Linterna Simple y Fácil, Pan Fácil, Tanquetazo, Sudokrimen, Red Práctica, aMule Remote y Whiskers of the Night. Sencillas y respetando tu privacidad.">
+<meta name="description" content="Appsconarte crea aplicaciones Android sencillas y útiles: Cita ITV Andalucía, Descubre Córdoba, Mi Nómina Neta, Puzzlazo, Linterna Simple y Fácil, Pan Fácil, Tanquetazo, Sudokrimen, Red Práctica, aMule Remote, Cestita, Qbit Remote y Whiskers of the Night. Sencillas y respetando tu privacidad.">
 <link rel="icon" href="img/logo.svg" type="image/svg+xml">
 <meta property="og:title" content="Appsconarte">
 <meta property="og:description" content="Apps sencillas y útiles, hechas en Andalucía.">
@@ -83,6 +83,10 @@
   @media (prefers-color-scheme: dark) { .amuleremote { --acento: #FFB074; --acento-claro: #3A2A1C; } }
   .whiskers { --acento: #5B3FA0; --acento-claro: #ECE6FA; }
   @media (prefers-color-scheme: dark) { .whiskers { --acento: #C3B1FF; --acento-claro: #2A2340; } }
+  .cestita { --acento: #B8402A; --acento-claro: #FBE5DE; }
+  @media (prefers-color-scheme: dark) { .cestita { --acento: #FF9A80; --acento-claro: #3A2621; } }
+  .qbitremote { --acento: #5B3FD1; --acento-claro: #ECE8FD; }
+  @media (prefers-color-scheme: dark) { .qbitremote { --acento: #B8A6FF; --acento-claro: #28233F; } }
   .acciones { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .boton { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--borde); }
   .boton.principal { background: var(--acento); color: #fff; border-color: transparent; }
@@ -115,7 +119,11 @@
     .app, .app.invertida { grid-template-columns: 1fr; padding: 28px 22px; gap: 28px; }
     .app.invertida .telefono { order: 0; }
     .principios { grid-template-columns: 1fr; }
-    nav a:not(:last-child) { display: none; }
+    nav a:not(:last-child):not([href="#apps"]):not([href="#juegos"]) { display: none; }
+    nav a { margin-left: 16px; }
+  }
+  @media (max-width: 420px) {
+    nav a:last-child { display: none; }
     .portada { padding: 48px 0 32px; }
   }
 </style>
@@ -126,7 +134,8 @@
   <div class="envoltura">
     <a class="marca" href="#"><img src="img/logo.svg" alt="">Appsconarte</a>
     <nav>
-      <a href="#apps">Aplicaciones</a>
+      <a href="#apps">Apps</a>
+      <a href="#juegos">Juegos</a>
       <a href="#privacidad">Privacidad</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -151,6 +160,8 @@
         <img src="img/redpractica-icono.png" alt="Icono de Red Práctica">
         <img src="img/amuleremote-icono.png" alt="Icono de aMule Remote">
         <img src="img/whiskers-icono.png" alt="Icono de Whiskers of the Night">
+        <img src="img/cestita-icono.png" alt="Icono de Cestita">
+        <img src="img/qbitremote-icono.png" alt="Icono de Qbit Remote">
       </div>
     </div>
   </div>
@@ -158,8 +169,8 @@
   <section id="apps">
     <div class="envoltura">
       <div class="titulo-seccion">
-        <h2>Nuestras aplicaciones</h2>
-        <p>Gratuitas y disponibles para Android.</p>
+        <h2>Aplicaciones</h2>
+        <p>Útiles para el día a día, gratuitas y para Android.</p>
       </div>
 
       <article class="app itv">
@@ -212,6 +223,7 @@
         </div>
         <div class="telefono"><img src="img/descubrecordoba-captura.jpg" alt="Ficha de la Mezquita-Catedral en Descubre Córdoba" loading="lazy" width="540" height="1080"></div>
       </article>
+
       <article class="app nomina">
         <div>
           <div class="app-cabecera">
@@ -238,32 +250,7 @@
         <div class="telefono"><img src="img/minominaneta-captura.jpg" alt="Resultado del sueldo neto en Mi Nómina Neta" loading="lazy" width="540" height="1080"></div>
       </article>
 
-      <article class="app puzzlazo invertida">
-        <div>
-          <div class="app-cabecera">
-            <img src="img/puzzlazo-icono.png" alt="">
-            <div>
-              <h3>Puzzlazo</h3>
-              <p class="lema">¿Una partidita?</p>
-            </div>
-          </div>
-          <p>Tres juegos de los de siempre en una sola app, con un estilo de juego de mesa hecho a mano: 2048, Bloques y Sudoku.</p>
-          <ul>
-            <li>2048: desliza y junta números iguales hasta llegar al 2048</li>
-            <li>Bloques: encaja piezas y limpia filas y columnas haciendo combos</li>
-            <li>Sudoku en cuatro niveles, con notas, pistas y tu mejor tiempo</li>
-            <li>Funciona sin conexión y sigue la partida donde la dejaste</li>
-            <li>Nunca hay anuncios a mitad de partida</li>
-          </ul>
-          <div class="acciones">
-            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.puzzlazo">Descargar en Google Play</a>
-            <a class="boton" href="puzzlazo-privacidad/">Política de privacidad</a>
-          </div>
-        </div>
-        <div class="telefono"><img src="img/puzzlazo-captura.jpg" alt="Partida de 2048 en Puzzlazo" loading="lazy" width="540" height="1080"></div>
-      </article>
-
-      <article class="app linterna">
+      <article class="app linterna invertida">
         <div>
           <div class="app-cabecera">
             <img src="img/linterna-icono.png" alt="">
@@ -288,7 +275,7 @@
         <div class="telefono"><img src="img/linterna-captura.jpg" alt="Pantalla principal de Linterna Simple y Fácil con la luz encendida" loading="lazy" width="540" height="1080"></div>
       </article>
 
-      <article class="app panfacil invertida">
+      <article class="app panfacil">
         <div>
           <div class="app-cabecera">
             <img src="img/panfacil-icono.png" alt="">
@@ -311,56 +298,6 @@
           </div>
         </div>
         <div class="telefono"><img src="img/panfacil-captura.jpg" alt="Pantalla principal de Pan Fácil con un campo de trigo y recetas de masa madre" loading="lazy" width="540" height="1080"></div>
-      </article>
-
-      <article class="app tanquetazo">
-        <div>
-          <div class="app-cabecera">
-            <img src="img/tanquetazo-icono.png" alt="">
-            <div>
-              <h3>Tanquetazo</h3>
-              <p class="lema">Batalla de tanques retro</p>
-            </div>
-          </div>
-          <p>Defiende tu base de oleadas de tanques enemigos en un arcade de 8 bits con pixel art propio y controles pensados para el móvil.</p>
-          <ul>
-            <li>35 niveles hechos a mano y un jefe gigante cada 5 etapas</li>
-            <li>Dos jugadores en el mismo móvil, en cooperativo</li>
-            <li>Editor de niveles: crea mapas y compártelos con un código</li>
-            <li>Taller con mejoras y aspectos para tu tanque</li>
-            <li>Nunca hay anuncios a mitad de etapa</li>
-          </ul>
-          <div class="acciones">
-            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.tanquetazo">Descargar en Google Play</a>
-            <a class="boton" href="tanquetazo-privacidad/">Política de privacidad</a>
-          </div>
-        </div>
-        <div class="telefono"><img src="img/tanquetazo-captura.jpg" alt="Partida de Tanquetazo con muros de ladrillo, tanques y los controles en pantalla" loading="lazy" width="540" height="1080"></div>
-      </article>
-
-      <article class="app sudokrimen invertida">
-        <div>
-          <div class="app-cabecera">
-            <img src="img/sudokrimen-icono.png" alt="">
-            <div>
-              <h3>Sudokrimen</h3>
-              <p class="lema">Crimen + sudoku. ¿Quién fue?</p>
-            </div>
-          </div>
-          <p>Un juego de deducción: lee las pistas, coloca a los sospechosos en el plano de la casa y descubre quién es el asesino.</p>
-          <ul>
-            <li>60 casos de dificultad creciente, de 4×4 a 7×7, cada uno con una única solución</li>
-            <li>Dibujos propios: muebles, estancias y sospechosos con personalidad</li>
-            <li>Marcas para descartar, deshacer sin límite y estrellas por caso</li>
-            <li>Sin registro ni conexión: tu progreso se guarda en el móvil</li>
-            <li>Nunca hay anuncios mientras resuelves un caso</li>
-          </ul>
-          <div class="acciones">
-            <a class="boton" href="sudokrimen-privacidad/">Política de privacidad</a>
-          </div>
-          <p class="lema">Muy pronto en Google Play.</p>
-        </div>
-        <div class="telefono"><img src="img/sudokrimen-captura.jpg" alt="Caso de Sudokrimen con el plano de una casa, muebles dibujados y sospechosos colocados" loading="lazy" width="540" height="1080"></div>
       </article>
 
       <article class="app redpractica invertida">
@@ -414,6 +351,141 @@
         <div class="telefono"><img src="img/amuleremote-captura.jpg" alt="Lista de descargas en aMule Remote, en modo demostración" loading="lazy" width="540" height="1080"></div>
       </article>
 
+      <article class="app cestita invertida">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/cestita-icono.png" alt="">
+            <div>
+              <h3>Cestita</h3>
+              <p class="lema">La compra de casa, entre dos</p>
+            </div>
+          </div>
+          <p>Lista de la compra y despensa para compartir en pareja o en casa, con aviso el día que toca comprar.</p>
+          <ul>
+            <li>Apunta varias cosas de golpe, escribiendo o por voz, ordenadas por secciones</li>
+            <li>Compartida en tiempo real: los dos veis los mismos cambios</li>
+            <li>Despensa con mínimos: lo que se acaba pasa solo a la lista</li>
+            <li>Historial de compras y gasto de cada mes</li>
+            <li>Sin publicidad. Para compartir la lista se entra con una cuenta de Google</li>
+          </ul>
+          <div class="acciones">
+            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.cestita">Descargar en Google Play</a>
+            <a class="boton" href="cestita-privacidad/">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="telefono"><img src="img/cestita-captura.jpg" alt="Lista de la compra de Cestita con el aviso de que hoy toca comprar" loading="lazy" width="540" height="1080"></div>
+      </article>
+
+      <article class="app qbitremote">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/qbitremote-icono.png" alt="">
+            <div>
+              <h3>Qbit Remote</h3>
+              <p class="lema">Tu qBittorrent, desde el móvil</p>
+            </div>
+          </div>
+          <p>Mando a distancia para tu propio servidor qBittorrent: las descargas las hace el servidor y tú lo controlas desde donde estés.</p>
+          <ul>
+            <li>Torrents con progreso, velocidades y tiempo restante</li>
+            <li>Máxima velocidad o limitada, con horario semanal</li>
+            <li>Varios servidores, categorías, etiquetas y detalle de archivos y pares</li>
+            <li>Disponible en 14 idiomas y con modo demostración para probarla sin servidor</li>
+          </ul>
+          <div class="acciones">
+            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.qbitremote">Descargar en Google Play</a>
+            <a class="boton" href="qbitremote-privacidad/">Política de privacidad</a>
+          </div>
+          <p class="aviso">App independiente, no afiliada al proyecto qBittorrent.</p>
+        </div>
+        <div class="telefono"><img src="img/qbitremote-captura.jpg" alt="Lista de torrents de Qbit Remote en modo demostración" loading="lazy" width="540" height="1080"></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="juegos">
+    <div class="envoltura">
+      <div class="titulo-seccion">
+        <h2>Juegos</h2>
+        <p>Para pasar un buen rato, gratuitos y para Android.</p>
+      </div>
+
+      <article class="app puzzlazo">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/puzzlazo-icono.png" alt="">
+            <div>
+              <h3>Puzzlazo</h3>
+              <p class="lema">¿Una partidita?</p>
+            </div>
+          </div>
+          <p>Tres juegos de los de siempre en una sola app, con un estilo de juego de mesa hecho a mano: 2048, Bloques y Sudoku.</p>
+          <ul>
+            <li>2048: desliza y junta números iguales hasta llegar al 2048</li>
+            <li>Bloques: encaja piezas y limpia filas y columnas haciendo combos</li>
+            <li>Sudoku en cuatro niveles, con notas, pistas y tu mejor tiempo</li>
+            <li>Funciona sin conexión y sigue la partida donde la dejaste</li>
+            <li>Nunca hay anuncios a mitad de partida</li>
+          </ul>
+          <div class="acciones">
+            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.puzzlazo">Descargar en Google Play</a>
+            <a class="boton" href="puzzlazo-privacidad/">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="telefono"><img src="img/puzzlazo-captura.jpg" alt="Partida de 2048 en Puzzlazo" loading="lazy" width="540" height="1080"></div>
+      </article>
+
+      <article class="app tanquetazo invertida">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/tanquetazo-icono.png" alt="">
+            <div>
+              <h3>Tanquetazo</h3>
+              <p class="lema">Batalla de tanques retro</p>
+            </div>
+          </div>
+          <p>Defiende tu base de oleadas de tanques enemigos en un arcade de 8 bits con pixel art propio y controles pensados para el móvil.</p>
+          <ul>
+            <li>35 niveles hechos a mano y un jefe gigante cada 5 etapas</li>
+            <li>Dos jugadores en el mismo móvil, en cooperativo</li>
+            <li>Editor de niveles: crea mapas y compártelos con un código</li>
+            <li>Taller con mejoras y aspectos para tu tanque</li>
+            <li>Nunca hay anuncios a mitad de etapa</li>
+          </ul>
+          <div class="acciones">
+            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.tanquetazo">Descargar en Google Play</a>
+            <a class="boton" href="tanquetazo-privacidad/">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="telefono"><img src="img/tanquetazo-captura.jpg" alt="Partida de Tanquetazo con muros de ladrillo, tanques y los controles en pantalla" loading="lazy" width="540" height="1080"></div>
+      </article>
+
+      <article class="app sudokrimen">
+        <div>
+          <div class="app-cabecera">
+            <img src="img/sudokrimen-icono.png" alt="">
+            <div>
+              <h3>Sudokrimen</h3>
+              <p class="lema">Crimen + sudoku. ¿Quién fue?</p>
+            </div>
+          </div>
+          <p>Un juego de deducción: lee las pistas, coloca a los sospechosos en el plano de la casa y descubre quién es el asesino.</p>
+          <ul>
+            <li>60 casos de dificultad creciente, de 4×4 a 7×7, cada uno con una única solución</li>
+            <li>Dibujos propios: muebles, estancias y sospechosos con personalidad</li>
+            <li>Marcas para descartar, deshacer sin límite y estrellas por caso</li>
+            <li>Sin registro ni conexión: tu progreso se guarda en el móvil</li>
+            <li>Nunca hay anuncios mientras resuelves un caso</li>
+          </ul>
+          <div class="acciones">
+            <a class="boton principal" href="https://play.google.com/store/apps/details?id=com.appsconarte.sudokrimen">Descargar en Google Play</a>
+            <a class="boton" href="sudokrimen-privacidad/">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="telefono"><img src="img/sudokrimen-captura.jpg" alt="Caso de Sudokrimen con el plano de una casa, muebles dibujados y sospechosos colocados" loading="lazy" width="540" height="1080"></div>
+      </article>
+
       <article class="app whiskers invertida">
         <div>
           <div class="app-cabecera">
@@ -439,6 +511,7 @@
         </div>
         <div class="telefono"><img src="img/whiskers-captura.jpg" alt="Subida de nivel en Whiskers of the Night, eligiendo entre tres mejoras" loading="lazy" width="540" height="1080"></div>
       </article>
+
     </div>
   </section>
 
@@ -452,12 +525,12 @@
         <div class="principio">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
           <h3>Sin registros</h3>
-          <p>Ninguna app te obliga a crear una cuenta. Abres la app y la usas.</p>
+          <p>Abres la app y la usas. La única que pide cuenta de Google es Cestita, porque sirve para compartir la lista.</p>
         </div>
         <div class="principio">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
           <h3>Tú decides dónde van tus datos</h3>
-          <p>Por defecto se guardan en tu móvil. Si quieres, en algunas apps puedes iniciar sesión para tener una copia en la nube, y borrarla cuando quieras.</p>
+          <p>En la mayoría se guardan en tu móvil, con copia opcional en la nube en algunas. Cestita guarda en la nube la lista compartida de tu casa. Siempre puedes borrarlos.</p>
         </div>
         <div class="principio">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.3 2.3 4.7-5"/></svg>
@@ -482,7 +555,7 @@
 <footer>
   <div class="envoltura">
     <span>© 2026 Appsconarte</span>
-    <span><a href="citaitv-privacidad/">Privacidad · Cita ITV Andalucía</a> · <a href="descubrecordoba-privacidad/">Privacidad · Descubre Córdoba</a> · <a href="minominaneta-privacidad/">Privacidad · Mi Nómina Neta</a> · <a href="puzzlazo-privacidad/">Privacidad · Puzzlazo</a> · <a href="linterna-privacidad/">Privacidad · Linterna Simple y Fácil</a> · <a href="panfacil-privacidad/">Privacidad · Pan Fácil</a> · <a href="tanquetazo-privacidad/">Privacidad · Tanquetazo</a> · <a href="sudokrimen-privacidad/">Privacidad · Sudokrimen</a> · <a href="redpractica-privacidad/">Privacidad · Red Práctica</a> · <a href="amuleremote-privacidad/">Privacidad · aMule Remote</a> · <a href="whiskers-privacidad/">Privacidad · Whiskers of the Night</a></span>
+    <span><a href="citaitv-privacidad/">Privacidad · Cita ITV Andalucía</a> · <a href="descubrecordoba-privacidad/">Privacidad · Descubre Córdoba</a> · <a href="minominaneta-privacidad/">Privacidad · Mi Nómina Neta</a> · <a href="puzzlazo-privacidad/">Privacidad · Puzzlazo</a> · <a href="linterna-privacidad/">Privacidad · Linterna Simple y Fácil</a> · <a href="panfacil-privacidad/">Privacidad · Pan Fácil</a> · <a href="tanquetazo-privacidad/">Privacidad · Tanquetazo</a> · <a href="sudokrimen-privacidad/">Privacidad · Sudokrimen</a> · <a href="redpractica-privacidad/">Privacidad · Red Práctica</a> · <a href="amuleremote-privacidad/">Privacidad · aMule Remote</a> · <a href="whiskers-privacidad/">Privacidad · Whiskers of the Night</a> · <a href="cestita-privacidad/">Privacidad · Cestita</a> · <a href="qbitremote-privacidad/">Privacidad · Qbit Remote</a></span>
     <span class="legal">Foto de la Mezquita-Catedral en la captura de Descubre Córdoba: Benjamin Smith, CC BY-SA 4.0. Fotos en la captura de Pan Fácil, de Wikimedia Commons: böhringer friedrich (CC BY-SA 2.5), Jeuwre (CC BY-SA 4.0) y Anon423 (CC BY-SA 4.0). Google Play es una marca de Google LLC.</span>
   </div>
 </footer>
